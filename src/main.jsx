@@ -202,7 +202,7 @@ function Navigation({ scrolled, menuOpen, setMenuOpen }) {
     <header className={`fixed left-0 right-0 top-0 z-50 transition-all duration-500 ${scrolled ? "border-b border-white/50 bg-white/75 shadow-sm backdrop-blur-2xl" : "bg-transparent"}`}>
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
         <a href="#home" className="flex items-center gap-3" aria-label="Sree Homoeopathy home">
-          <span className="grid h-12 w-12 place-items-center rounded-2xl bg-clinic-green text-lg font-black text-white shadow-card">SH</span>
+          <img src="/assets/sree-homoeo-logo.svg" alt="SREE HOMOEO CLINIC logo" className="h-14 w-14 rounded-2xl object-contain shadow-card" />
           <span>
             <span className="block font-heading text-base font-extrabold">{clinic.shortName}</span>
             <span className="block text-xs font-semibold text-slate-500">{clinic.area}</span>
@@ -729,7 +729,7 @@ function Footer() {
   return (
     <footer className="bg-clinic-ink px-5 py-12 text-white lg:px-8">
       <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-[1.2fr_0.8fr_0.8fr_1fr]">
-        <div><div className="flex items-center gap-3"><span className="grid h-12 w-12 place-items-center rounded-2xl bg-clinic-green font-black">SH</span><div><p className="font-heading text-xl font-black">{clinic.shortName}</p><p className="text-sm text-white/60">{clinic.area}</p></div></div><p className="mt-5 max-w-sm leading-7 text-white/60">{clinic.description} with homoeopathic consultation for natural healing, chronic care and family wellness.</p></div>
+        <div><div className="flex items-center gap-3"><img src="/assets/sree-homoeo-logo.svg" alt="SREE HOMOEO CLINIC logo" className="h-14 w-14 rounded-2xl bg-white object-contain" /><div><p className="font-heading text-xl font-black">{clinic.shortName}</p><p className="text-sm text-white/60">{clinic.area}</p></div></div><p className="mt-5 max-w-sm leading-7 text-white/60">{clinic.description} with homoeopathic consultation for natural healing, chronic care and family wellness.</p></div>
         <FooterLinks title="Quick Links" links={["Doctor", "Treatments", "Process", "Gallery"]} />
         <FooterLinks title="Treatments" links={["Women Health", "Child Care", "Skin & Hair", "Allergy Care"]} />
         <div><p className="font-heading text-lg font-black">Clinic</p><p className="mt-4 leading-7 text-white/60">{clinic.address}</p></div>
