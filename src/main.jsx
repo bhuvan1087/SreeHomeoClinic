@@ -28,7 +28,7 @@ import "./styles.css";
 const clinic = {
   name: "SREE HOMOEO CLINIC",
   shortName: "SREE HOMOEO CLINIC",
-  doctor: "Dr.Sree Divya",
+  doctor: "Dr. Sri Divya",
   description: "Clinic & stores",
   qualification: "B.H.M.S., M.Sc. Psychology",
   area: "Yapral, Secunderabad",
@@ -81,7 +81,7 @@ const features = [
 
 const process = [
   ["01", "Discover", "Detailed case-taking with symptoms, triggers, medical history and lifestyle patterns.", Search],
-  ["02", "Personalize", "A homeopathic plan is selected based on the person, not only the condition name.", Flower2],
+  ["02", "Personalize", "A homoeopathic plan is selected based on the person, not only the condition name.", Flower2],
   ["03", "Guide", "Diet, routine and follow-up guidance are shared where relevant for long-term wellness.", Leaf],
   ["04", "Review", "Progress is reviewed and treatment is adjusted based on patient response.", CalendarCheck],
 ];
@@ -94,11 +94,11 @@ const testimonials = [
 ];
 
 const faqs = [
-  ["Is homeopathy suitable for children and adults?", "Homeopathy may be considered for different age groups when prescribed after consultation by a qualified doctor."],
+  ["Is Homoeopathy suitable for children and adults?", "Homoeopathy may be considered for different age groups when prescribed after consultation by a qualified doctor."],
   ["How long does treatment take?", "The duration depends on the condition, severity, history and individual response. Chronic concerns usually need planned follow-ups."],
   ["Can I discuss PCOS, thyroid or skin concerns?", "Yes. The clinic evaluates PCOS/PCOD, thyroid concerns, skin disease, allergies, migraine, sinusitis and lifestyle-related conditions."],
   ["What should I bring for consultation?", "Bring previous prescriptions, lab reports and a short note of your symptoms, duration, triggers and current medicines."],
-  ["Can I take homeopathy with other medicines?", "Tell the doctor about every medicine you currently take. The doctor can guide you based on your situation."],
+  ["Can I take Homoeopathy with other medicines?", "Tell the doctor about every medicine you currently take. The doctor can guide you based on your situation."],
 ];
 
 const appointmentSlots = [
@@ -117,11 +117,11 @@ const appointmentSlots = [
 ];
 
 const gallery = [
-  ["Homeopathic Consultation", clinic.image, ""],
-  ["Homeopathic Remedies", "/assets/gallery-homeopathy-remedies.png", ""],
-  ["Case Taking and Consultation", "/assets/gallery-homeopathy-consultation.png", ""],
-  ["Child Immunity Support", "/assets/gallery-child-care-homeopathy.png", ""],
-  ["Allergy and Respiratory Care", "/assets/gallery-respiratory-homeopathy.png", ""],
+  ["Homoeopathic Consultation", clinic.image, ""],
+  ["Homoeopathic Remedies", "/assets/gallery-homoeopathy-remedies.png", ""],
+  ["Case Taking and Consultation", "/assets/gallery-homoeopathy-consultation.png", ""],
+  ["Child Immunity Support", "/assets/gallery-child-care-homoeopathy.png", ""],
+  ["Allergy and Respiratory Care", "/assets/gallery-respiratory-homoeopathy.png", ""],
 ];
 
 const fadeUp = {
@@ -201,7 +201,7 @@ function Navigation({ scrolled, menuOpen, setMenuOpen }) {
   return (
     <header className={`fixed left-0 right-0 top-0 z-50 transition-all duration-500 ${scrolled ? "border-b border-white/50 bg-white/75 shadow-sm backdrop-blur-2xl" : "bg-transparent"}`}>
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
-        <a href="#home" className="flex items-center gap-3" aria-label="Sree Homeopathy home">
+        <a href="#home" className="flex items-center gap-3" aria-label="Sree Homoeopathy home">
           <span className="grid h-12 w-12 place-items-center rounded-2xl bg-clinic-green text-lg font-black text-white shadow-card">SH</span>
           <span>
             <span className="block font-heading text-base font-extrabold">{clinic.shortName}</span>
@@ -244,12 +244,12 @@ function Hero() {
       <AnimatedBackdrop />
       <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-[1.03fr_0.97fr]">
         <motion.div variants={fadeUp} initial="hidden" animate="show" className="relative z-10">
-          <span className="pill mb-7"><Sparkles className="h-4 w-4" />Premium homeopathy care in Yapral</span>
+          <span className="pill mb-7"><Sparkles className="h-4 w-4" />Premium Homoeopathy care in Yapral</span>
           <h1 className="max-w-3xl font-heading text-3xl font-normal !leading-[1.18] tracking-tight text-clinic-ink sm:text-4xl md:text-[2.7rem] xl:text-[3rem]">
             Natural healing, guided with <span className="font-extrabold text-clinic-green">modern clinical care</span>.
           </h1>
           <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-600 md:text-xl">
-            {clinic.name} by {clinic.doctor} brings calm, personalized homeopathic consultation for women, children and chronic health concerns, with clinic visits and online consultations available.
+            {clinic.name} by {clinic.doctor} brings calm, personalized homoeopathic consultation for women, children and chronic health concerns, with clinic visits and online consultations available.
           </p>
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <a href="#appointment" className="btn btn-green btn-xl"><CalendarCheck className="h-5 w-5" />Book Appointment</a>
@@ -269,7 +269,7 @@ function Hero() {
             <div className="relative overflow-hidden rounded-[2.2rem] border border-white/80 bg-white/50 p-3 shadow-luxury backdrop-blur-2xl">
               <img src={clinic.image} alt={clinic.doctor} className="h-[430px] w-full rounded-[1.7rem] object-cover object-center max-md:h-[340px]" />
               <div className="absolute bottom-5 left-5 right-5 rounded-luxury border border-white/70 bg-white/80 p-4 shadow-card backdrop-blur-xl">
-                <p className="text-xs font-black uppercase tracking-widest text-clinic-green">Consultant Homeopath</p>
+                <p className="text-xs font-black uppercase tracking-widest text-clinic-green">Consultant Homoeopath</p>
                 <h2 className="mt-1 font-heading text-xl font-black">{clinic.doctor}</h2>
                 <p className="mt-1 text-sm font-semibold text-slate-600">{clinic.qualification}</p>
               </div>
@@ -373,7 +373,7 @@ function Doctor() {
           <p className="section-eyebrow">Meet The Doctor</p>
           <h2 className="section-title">{clinic.doctor}</h2>
           <p className="mt-4 text-base leading-7 text-slate-600 lg:text-lg">
-            A homeopath practicing in Yapral with 20 years of experience. Dr. Divya completed B.H.M.S. from HKE-S Homeopathy Medical College, Gulbarga and M.Sc. Psychology from Annamalai University.
+            A homoeopath practicing in Yapral with 20 years of experience. Dr. Sri Divya completed B.H.M.S. from HKE-S Homoeopathy Medical College, Gulbarga and M.Sc. Psychology from Annamalai University.
           </p>
           <div className="mt-5 grid gap-3 sm:grid-cols-2">
             {[["Qualification", clinic.qualification], ["Experience", "20 years"], ["Specialties", "Women health, child care, skin, allergy and chronic concerns"], ["Clinic", `${clinic.shortName}, ${clinic.area}`]].map(([label, value]) => (
@@ -394,7 +394,7 @@ function Treatments() {
   const [query, setQuery] = useState("");
   const filtered = useMemo(() => treatments.filter(([, name]) => name.toLowerCase().includes(query.toLowerCase())), [query]);
   return (
-    <Section id="treatments" eyebrow="Treatments" title="Advanced homeopathic care across everyday and chronic concerns.">
+    <Section id="treatments" eyebrow="Treatments" title="Advanced homoeopathic care across everyday and chronic concerns.">
       <div className="mb-6 flex max-w-md items-center gap-3 rounded-full border border-slate-200 bg-white px-5 py-3 shadow-sm">
         <Search className="h-5 w-5 text-clinic-green" />
         <input value={query} onChange={(event) => setQuery(event.target.value)} className="w-full bg-transparent text-sm font-semibold outline-none" placeholder="Search treatments" aria-label="Search treatments" />
@@ -455,7 +455,7 @@ function Testimonials({ index, setIndex }) {
 
 function Gallery({ setActiveImage }) {
   return (
-    <Section id="gallery" eyebrow="Treatment Gallery" title="Homeopathy care themes for women, children, allergies, remedies and lifestyle wellness.">
+    <Section id="gallery" eyebrow="Treatment Gallery" title="Homoeopathy care themes for women, children, allergies, remedies and lifestyle wellness.">
       <div className="grid auto-rows-[190px] gap-4 md:grid-cols-3">
         {gallery.map(([title, src, span]) => (
           <motion.button key={title} type="button" whileHover={{ y: -6 }} onClick={() => setActiveImage({ title, src })} className={`group relative overflow-hidden rounded-luxury bg-slate-100 shadow-card ${span}`}>
@@ -701,7 +701,7 @@ function Contact() {
     <section id="contact" className="scroll-mt-20 bg-clinic-mist px-5 py-6 lg:min-h-[calc(100vh-80px)] lg:px-8">
       <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[1fr_0.78fr]">
         <div className="overflow-hidden rounded-[2rem] border border-white bg-white shadow-card">
-          <iframe title="Sree Homeopathy Clinic location" src="https://www.google.com/maps?q=GG3Q%2B9WR%2C%20Yapral%20Main%20Rd%2C%20Secunderabad%2C%20Telangana%20500087&output=embed" className="h-[420px] w-full border-0" loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+          <iframe title="Sree Homoeopathy Clinic location" src="https://www.google.com/maps?q=GG3Q%2B9WR%2C%20Yapral%20Main%20Rd%2C%20Secunderabad%2C%20Telangana%20500087&output=embed" className="h-[420px] w-full border-0" loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
         </div>
         <div className="rounded-[2rem] bg-white p-6 shadow-card">
           <p className="section-eyebrow">Contact</p>
@@ -729,7 +729,7 @@ function Footer() {
   return (
     <footer className="bg-clinic-ink px-5 py-12 text-white lg:px-8">
       <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-[1.2fr_0.8fr_0.8fr_1fr]">
-        <div><div className="flex items-center gap-3"><span className="grid h-12 w-12 place-items-center rounded-2xl bg-clinic-green font-black">SH</span><div><p className="font-heading text-xl font-black">{clinic.shortName}</p><p className="text-sm text-white/60">{clinic.area}</p></div></div><p className="mt-5 max-w-sm leading-7 text-white/60">{clinic.description} with homeopathic consultation for natural healing, chronic care and family wellness.</p></div>
+        <div><div className="flex items-center gap-3"><span className="grid h-12 w-12 place-items-center rounded-2xl bg-clinic-green font-black">SH</span><div><p className="font-heading text-xl font-black">{clinic.shortName}</p><p className="text-sm text-white/60">{clinic.area}</p></div></div><p className="mt-5 max-w-sm leading-7 text-white/60">{clinic.description} with homoeopathic consultation for natural healing, chronic care and family wellness.</p></div>
         <FooterLinks title="Quick Links" links={["Doctor", "Treatments", "Process", "Gallery"]} />
         <FooterLinks title="Treatments" links={["Women Health", "Child Care", "Skin & Hair", "Allergy Care"]} />
         <div><p className="font-heading text-lg font-black">Clinic</p><p className="mt-4 leading-7 text-white/60">{clinic.address}</p></div>
